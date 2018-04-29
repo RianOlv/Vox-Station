@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
 <head>
     <meta charset="UTF-8">
     <title>Entrar</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/conta.css' %}" />
 </head>
 <body>
     <!--Design temporário da página de login-->
-    {% load crispy_forms_tags %}
-
-    {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'login/logar_conta.css' %}" />
 
     <div class="container-fluid">
         <div class="col">
@@ -28,7 +29,7 @@
                     </div>
                     {% endfor %}
 
-                    <center><button type="submit" class="btn btn-primary">Iniciar Sessão</button></center><br/><br/>
+                    <center><button class="btn btn-lg btn-primary btn-block" type="submit">Iniciar Sessão</button></center><br/><br/>
                     <center><h5><strong><br/><a href="{% url 'login:NewConta' %}">Não tem uma conta? Crie a sua aqui!</a></strong></h5></center>
                 </form>
             </div>

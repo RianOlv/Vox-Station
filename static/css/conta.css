@@ -1,0 +1,35 @@
+.alert-danger {
+    color: darkred;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.alert {
+    padding: 8px;
+    margin-bottom: 25px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid darkgray;
+    border-radius: inherit;
+}
+
+.form-control:focus {
+    border-bottom: 2px solid skyblue;
+    box-shadow: inherit;
+}
+
+.btn {
+    margin-top: 25px;
+}
+
+.btn-lg {
+    padding: 7px;
+}
+
+body {
+    background-color: #f5f5f5;
+}
