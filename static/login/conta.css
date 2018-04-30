@@ -33,7 +33,7 @@
 
 .btn {
     margin-top: 20px;
-    margin-bottom: -23px;
+    margin-bottom: -30px;
     font-size: 15px;
 }
 
@@ -58,7 +58,7 @@ body {
     position: static;
 }
 
-.login-form-body {
+.account-form-body {
     padding-bottom: 5px;
     padding-left: 18px;
     padding-right: 18px;
@@ -68,10 +68,11 @@ body {
     border: 1px solid #d8dee2;
 }
 
-.new-account-callout {
+.account-callout {
     padding-bottom: 10px;
     text-align: center;
     border: 1px solid #d8dee2;
     border-radius: 6px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }

@@ -11,23 +11,24 @@
     <link rel="stylesheet" type="text/css" href="{% static 'login/conta.css' %}" />
 </head>
 <body>
-    <!--Design temporário da página de cadastro-->
-
     <div class="container-fluid">
         <div class="col">
             <div class="col-md-4 col-md-offset-4">
-                <div class="page-header">
-                    <h3>Crie sua Conta do Vox Station</h3>
-                </div>
+                <center><h3>Crie sua Conta do Vox Station</h3></center>
 
                 <form method="POST" class="newconta-form">{% csrf_token %}
-                    <br/>{{ newconta|crispy }}
+                    <div class="account-form-body">
+                        <br/>{{ newconta|crispy }}
 
-                    <!--Programar para que só seja possível finalizar o cadastro após marcar a checkbox-->
-                    <input type="checkbox" value="termos"> Li e concordo com os <a href="#">termos de uso</a>.
+                        <!--Programar para que só seja possível finalizar o cadastro após marcar a checkbox-->
+                        <input type="checkbox" value="termos"> Li e concordo com os <a href="#">termos de uso</a>.
 
-                    <center><button class="btn btn-lg btn-primary btn-block" type="submit">Finalizar</button></center><br/><br/>
-                    <center><h5><strong><br/><a href="{% url 'login:LoginConta' %}">Já possui uma conta? Inicie sua sessão aqui!</a></strong></h5></center>
+                        <center><button class="btn btn-lg btn-primary btn-block" type="submit"><strong>Finalizar</strong></button></center><br/><br/>
+                    </div>
+
+                    <div class="account-callout">
+                        <center><h5><br/>Já possui uma conta? <a href="{% url 'login:LoginConta' %}">Inicie sua sessão aqui!</a></h5></center>
+                    </div>
                 </form>
             </div>
         </div>

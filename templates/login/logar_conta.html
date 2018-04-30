@@ -12,8 +12,6 @@
     <link rel="stylesheet" type="text/css" href="{% static 'login/conta.css' %}" />
 </head>
 <body>
-    <!--Design temporário da página de login-->
-
     <div class="container-fluid">
         <div class="col">
             <div class="col-md-3 col-md-offset-4">
@@ -29,13 +27,13 @@
                     </div>
                     {% endfor %}
 
-                    <div class="login-form-body">
+                    <div class="account-form-body">
                         <br/>{{ form|crispy }}
 
                         <center><button class="btn btn-lg btn-primary btn-block" type="submit"><strong>Entrar</strong></button></center><br/><br/>
                     </div>
 
-                    <div class="new-account-callout">
+                    <div class="account-callout">
                         <center><h5><br/>Não tem uma conta? <a href="{% url 'login:NewConta' %}">Crie a sua aqui!</a></h5></center>
                     </div>
                 </form>
